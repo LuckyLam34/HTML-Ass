@@ -1,0 +1,103 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-size: 1.5em;
+	font-family: Helvetica, sans-serif;
+	background: url('../images/image_background.png');
+}
+
+/*to use html5 tags*/
+header, nav, section, article, aside, footer {
+   display:block;
+}
+
+.container {
+	margin: 0 auto;
+	width: 980px;
+}
+
+
+
+nav ul li {
+	float: left;
+	background: url('../images/img-bg-li.png') no-repeat center;
+	width: 163px;
+ 	text-align: center;
+ 	/*padding-top: 21px;*/
+    height: 41px;
+ 	float: left;
+	display: inline;
+	text-transform: uppercase;
+ 	font-size: 15px;
+ 	text-shadow: #FF8A00 0px -2px 0px;
+ 	font-weight: bold;
+}
+nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	line-height: 41px;
+}
+nav ul li:first-child {
+	background: url('../images/navbar-bg-first.png') no-repeat center;
+}
+#liLastChild {
+ 	background: url('../images/navbar-bg-last.png') no-repeat center;
+}
+header {
+	margin-top: 19px;
+	
+}
+.clear {
+ 	clear: both;
+
+}
+.logo {
+	margin-bottom: 16px;
+	float: left;
+}
+#myFormContainer{
+ 	width: 292px;
+ 	height: 27px;
+	float: right;
+	font-size: 0;
+	margin-top: 27px;
+ 	/*background: url(search_textfield_bg.png) no-repeat left top;*/
+ }
+ #myForm {
+	/*background: url('../images/search_btn_bg.png') no-repeat;*/
+	float: left;
+ }
+ #searchFieldBox {
+ 	float:left; 
+ 	width: 171px;
+
+ }
+ #searchFieldBox > input {
+ 	background: url('../images/search_textfield_bg.png') no-repeat top;
+ 	height: 22px;
+ 	/*line-height: 30px;*/
+ 	width: 171px;
+ 	padding-left: 14px;
+ 	border: none;
+ 	outline: none;
+ 	font-size: 11px;
+ 	color: #666666;
+ 	padding-top: 3px;
+ 	/*box-sizing: content-box;*/
+ }
+ #searchBtnBox{float:left; width: 27px;}
+
+ #flag {
+
+ 	float: right;
+ }
+
+ #flag > img {
+ 	padding-left: 8px;
+ 	margin-top: 5px;
+ } 
+ #flag > img:first-child {
+ 	border-left: solid 1px #b2b2b2 ;
+ }
