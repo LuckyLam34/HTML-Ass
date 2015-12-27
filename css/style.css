@@ -1,16 +1,7 @@
-* {
-	margin: 0;
-	padding: 0;
-}
 body {
 	font-size: 1.5em;
-	font-family: Helvetica, sans-serif;
+	font-family: "Century Gothic", Helvetica, sans-serif;
 	background: url('../images/image_background.png');
-}
-
-/*to use html5 tags*/
-header, nav, section, article, aside, footer {
-   display:block;
 }
 
 .container {
@@ -68,36 +59,89 @@ header {
  #myForm {
 	/*background: url('../images/search_btn_bg.png') no-repeat;*/
 	float: left;
- }
- #searchFieldBox {
- 	float:left; 
- 	width: 171px;
+}
+#searchFieldBox {
+	float:left; 
+	width: 171px;
 
- }
- #searchFieldBox > input {
- 	background: url('../images/search_textfield_bg.png') no-repeat top;
- 	height: 22px;
- 	/*line-height: 30px;*/
- 	width: 171px;
- 	padding-left: 14px;
- 	border: none;
- 	outline: none;
- 	font-size: 11px;
- 	color: #666666;
- 	padding-top: 3px;
- 	/*box-sizing: content-box;*/
- }
- #searchBtnBox{float:left; width: 27px;}
+}
+#searchFieldBox > input {
+	background: url('../images/search_textfield_bg.png') no-repeat top;
+	height: 22px;
+	/*line-height: 30px;*/
+	width: 171px;
+	padding-left: 14px;
+	border: none;
+	outline: none;
+	font-size: 11px;
+	color: #666666;
+	padding-top: 3px;
+	/*box-sizing: content-box;*/
+}
+#searchBtnBox{float:left; width: 27px;}
 
- #flag {
+#flag {
 
- 	float: right;
- }
+	float: right;
+}
 
- #flag > img {
- 	padding-left: 8px;
- 	margin-top: 5px;
- } 
- #flag > img:first-child {
- 	border-left: solid 1px #b2b2b2 ;
- }
+#flag > img {
+	padding-left: 8px;
+	margin-top: 5px;
+} 
+#flag > img:first-child {
+	border-left: solid 1px #b2b2b2 ;
+}
+
+.banner {
+	height: 307px;
+	margin: 20px 0;
+}
+
+/*Welcome Section*/
+.welcomeSection {
+	height: 130px;
+	padding: 10px;
+	margin: 20px 0;
+	background-color: #e9e9e9;
+	border: 1px solid #999;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(PIE.htc);
+}
+
+#welcomeText {
+	float: left;
+}
+
+#welcomeText > h1 {
+	font-size: 31px;
+	margin-top: 6px;
+	color: #FF6900;
+}
+#welcomeText p {
+	font-family: "Arial", Helvetica, sans-serif;
+	font-size: 11px;
+
+	float: left;
+	line-height: 18px;
+	padding-top: 13px;
+	width: 689px;
+	color: #000000;
+}
+#welcomeText p a {
+	color: #0096FF;
+}
+.welcomeSection > img {
+	float: right;
+	padding-left: 27px;
+}
+/*End Welcome Section*/
+
+.contact {
+	float: left;
+	width: 316px;
+	padding-left: 10px;
+
+}
