@@ -25,12 +25,12 @@
         <img src="images/logo.png" alt="logo">
       </div>
       <div id="myFormContainer">
-        <form id="myForm" action="#" method='post' > 
+        <form id="myForm" name="search" action="#" method='post' > 
           <div id="searchFieldBox">
             <input type="text" name="query" value="" placeholder="Search">
           </div>
           <div id="searchBtnBox">
-            <input type="image" src="images/search_btn_bg.png" > 
+            <input type="image" src="images/search_btn_bg.png" alt="Submit" > 
           </div>
         </form>
         <div id="flag">
@@ -86,6 +86,7 @@
         <div class="clear"></div>
         <hr>
 
+
         <article id="highLight">
           <img src="images/news-events.jpg" alt="events highlight"  class="left">
           <div class="relative fontArial">
@@ -98,27 +99,32 @@
         </article>
         <div class="clear"></div>
 
-        
+        <ul>
+          <li>
+            <article>
+              <div class="fontArial">
+                <h6 class="titleNewsEvents marginTop">Consetetur sadipscing elitr Consetetur sadipscing elitr Consete...   </h6>
+                <span class="right date">
+                  18.12.2013
+                </span>
+                <p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore Consetetur sadipscing elitr,  diam nonumy eirmod tempor invidunt ut labore...</p>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article>
+              <div class="fontArial">
+                <h6 class="titleNewsEvents marginTop">Consetetur sadipscing elitr Consetetur sadipscing elitr Consete... </h6>
+                <span class="right date">
+                  18.12.2013
+                </span>
+                <p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore Consetetur sadipscing elitr,  diam nonumy eirmod tempor invidunt ut labore...</p>
+              </div>
+            </article>
+          </li>
+        </ul>
 
-        <article>
-          <div class="fontArial">
-            <h6 class="titleNewsEvents marginTop">Consetetur sadipscing nonumy elitr...  </h6>
-            <span class="right date">
-              18.12.2013
-            </span>
-            <p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore Consetetur sadipscing elitr,  diam nonumy eirmod tempor invidunt ut labore...</p>
-          </div>
-        </article>
 
-        <article>
-          <div class="fontArial">
-            <h6 class="titleNewsEvents marginTop">Consetetur sadipscing nonumy elitr...  </h6>
-            <span class="right date">
-              18.12.2013
-            </span>
-            <p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore Consetetur sadipscing elitr,  diam nonumy eirmod tempor invidunt ut labore...</p>
-          </div>
-        </article>
 
       </section>
       
@@ -132,7 +138,8 @@
     </main> <!-- end main -->
 
     <div class="clear"></div>
-
+    
+    <!-- footer -->
     <footer id="bottomPage">
       <section class="info left">
         <h3>contact us</h3>
@@ -146,23 +153,31 @@
       <section class="quickLinks left">
         <h3>quick links</h3>
         <ul class="fontArial">
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Latest News</a></li>
-          <li><a href="#">FAQs</a></li>
-          <li><a href="#">Terms & Conditions</a></li>
-          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#" class="contact us">Contact Us</a></li>
+          <li><a href="#" class="latest news">Latest News</a></li>
+          <li><a href="#" class="FAQs">FAQs</a></li>
+          <li><a href="#" class="terms & conditions">Terms & Conditions</a></li>
+          <li><a href="#" class="privacy policy">Privacy Policy</a></li>
         </ul>
       </section>
       <section class="signUp left">
         <h3>newsletter</h3>
-        <input class="fontArial" type="email" name="email" placeholder="Enter Email...">
+
+        <form class="userEmailSender" name="emailSender" action="#" method='post'>
+        <div class="left">
+          <input class="fontArial" type="email" name="email" placeholder="Enter Email...">
+        </div>
+        <div class="left">
+          <input type="submit" class="fontArial" name="" value="Sign Up">
+        </div>
+        </form>
       </section>
       
       <div class="clear"></div>
       
       <hr/>
 
-      <nav id="bottomNav">
+      <nav id="bottomNav" class="left">
         <ul class="fontArial">
           <li><a href="#" title="homepage">Homepage</a></li>
           <li><a href="#" title="about us">About Us</a></li>
@@ -174,7 +189,10 @@
         </ul>
       </nav>
 
-    </footer>
+      <span class="fontArial" id="copyright">
+        Copyright © 2014 Template Demo All Rights Reserved.
+      </span>
+    </footer><!-- end footer -->
 	</div>
 	
 </body>
