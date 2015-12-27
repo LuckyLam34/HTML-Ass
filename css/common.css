@@ -1,0 +1,18 @@
+body {
+	font-size: 1.5em;
+	font-family: "Century Gothic", Helvetica, sans-serif;
+	background: url('../images/image_background.png');
+}
+
+.container {
+	margin: 0 auto;
+	width: 980px;
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}

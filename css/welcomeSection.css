@@ -1,0 +1,41 @@
+/*Welcome Section*/
+
+section.welcomeSection {
+	height: 130px;
+	padding: 10px;
+	margin: 20px 0;
+	background-color: #e9e9e9;
+	border: 1px none #999;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(PIE.htc);
+}
+
+article#welcomeText > h1 {
+	font-size: 31px;
+	margin-top: 6px;
+	color: #FF6900;
+}
+
+article#welcomeText p {
+	font-family: "Arial", Helvetica, sans-serif;
+	font-size: 11px;
+
+	float: left;
+	line-height: 18px;
+	padding-top: 13px;
+	width: 689px;
+	color: #000000;
+}
+
+a.viewMore {
+	color: #0096FF;
+	font-family: "Arial", Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+#welcomeSlider {
+	float: right;
+	padding-left: 27px;
+}
