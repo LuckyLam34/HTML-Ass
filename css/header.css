@@ -1,6 +1,6 @@
 /*header part*/
 
-nav ul li {
+nav#topNav ul li {
 	float: left;
 	background: url('../images/img-bg-li.png') no-repeat center;
 	width: 163px;
@@ -15,17 +15,17 @@ nav ul li {
  	font-weight: bold;
 }
 
-nav ul li a {
+nav#topNav ul li a {
 	text-decoration: none;
 	color: #fff;
 	line-height: 41px;
 }
 
-nav ul li:first-child {
+nav#topNav ul li:first-child {
 	background: url('../images/navbar-bg-first.png') no-repeat center;
 }
 
-#liLastChild {
+nav#topNav #liLastChild {
  	background: url('../images/navbar-bg-last.png') no-repeat center;
 }
 
@@ -63,7 +63,7 @@ header {
 
 #searchFieldBox > input {
 	background: url('../images/search_textfield_bg.png') no-repeat top;
-	height: 22px;
+	height: 21px;
 	/*line-height: 30px;*/
 	width: 171px;
 	padding-left: 14px;

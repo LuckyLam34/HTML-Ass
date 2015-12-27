@@ -18,7 +18,7 @@ section#newsEvents hr, section#partners  hr {
 }
 
 section.twoColumns .right {
-	margin-top: -7px;
+	margin-top: -14px;
 }
 
 .twoColumns {
@@ -49,7 +49,7 @@ article#highLight {
 	behavior: url(PIE.htc);
 }
 
-article#highLight > .relative > h6 {
+.titleNewsEvents {
 	font-weight: bold;
 	font-size: 11px;
 	color: #ff6900;
@@ -64,13 +64,27 @@ article#highLight > img {
 	position: relative;
 }
 
-#date {
+.date {
 	color: #666666;
 	font-size: 11px;
 	margin-top: -15px;
+	border-left: 1px solid #666666;
+	padding-left: 4px;
 }
 
-article#highLight p {
+h6.titleNewsEvents ~ p {
 	font-size: 11px;
 	line-height: 14px;
+}
+
+.marginTop {
+	margin-top: 12px;
+}
+
+ul {
+	/*list-style-type: circle;*/
+}
+
+.starIcon {
+	background: url('../images/star_icon.png') no-repeat;
 }

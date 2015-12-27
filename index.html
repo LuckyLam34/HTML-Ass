@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="css/header.css"  type="text/css">
   <link rel="stylesheet" href="css/welcomeSection.css"  type="text/css">
   <link rel="stylesheet" href="css/newsEventsPartners.css"  type="text/css">
+  <link rel="stylesheet" href="css/footer.css"  type="text/css">
 	<link rel="stylesheet" href="css/style.css"  type="text/css">
 </head>
 <body>
@@ -41,7 +42,7 @@
       <div class="clear"></div>
 
       <!-- navbar -->
-      <nav>
+      <nav id="topNav">
         <ul>
           <li><a href="#">About us</a></li>
           <li><a href="#">Services</a></li>
@@ -55,7 +56,7 @@
     
     <div class="clear"></div>
     
-    <main role="main">
+    <main>
       <section class="banner">
         <img src="images/banner.jpg" alt="">
       </section>
@@ -64,7 +65,7 @@
       <section class="welcomeSection">
         <article class="left" id="welcomeText">
           <h1>Welcome to our Web Site !</h1>
-          <p>Lorem Ipsum consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore Lorem ipsum dolor sit amet, conseter sadipscing elitr, sed diam ipsum dolor sit amet, conseter sadipscing elitr, sed diam Lorem Ipsum consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore Lorem ipsum dolor sit amet, conseter sadipscing elitr, sed diam ipsum dolor sit amet, conseter sadipscing elitr, sed diam invidunt ut labore Lorem ipsum dolor sit amet, conseter sadipscing elitr, sed diam ipsum dolor sit amet, conseter conseter sit... <a href="#" class="viewMore">View more </a></p>
+          <p class="fontArial">Lorem Ipsum consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore Lorem ipsum dolor sit amet, conseter sadipscing elitr, sed diam ipsum dolor sit amet, conseter sadipscing elitr, sed diam Lorem Ipsum consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore Lorem ipsum dolor sit amet, conseter sadipscing elitr, sed diam ipsum dolor sit amet, conseter sadipscing elitr, sed diam invidunt ut labore Lorem ipsum dolor sit amet, conseter sadipscing elitr, sed diam ipsum dolor sit amet, conseter conseter sit... <a href="#" class="viewMore">View more </a></p>
         </article>
         <div id="welcomeSlider">
           <img src="images/welcome.jpg" alt="">
@@ -87,20 +88,40 @@
 
         <article id="highLight">
           <img src="images/news-events.jpg" alt="events highlight"  class="left">
-          <div class="relative">
-            <h6>Consetetur sadipscing nonumy elitr...  </h6>
-            <span class="right" id="date">
+          <div class="relative fontArial">
+            <h6 class="titleNewsEvents">Consetetur sadipscing nonumy elitr...  </h6>
+            <span class="right date">
               18.12.2013
             </span>
-            
-            
-
             <p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore Consetetur sadipscing elitr,  diam nonumy eirmod tempor invidunt ut labore...</p>
-
           </div>
         </article>
-      </section>
+        <div class="clear"></div>
 
+        
+
+        <article>
+          <div class="fontArial">
+            <h6 class="titleNewsEvents marginTop">Consetetur sadipscing nonumy elitr...  </h6>
+            <span class="right date">
+              18.12.2013
+            </span>
+            <p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore Consetetur sadipscing elitr,  diam nonumy eirmod tempor invidunt ut labore...</p>
+          </div>
+        </article>
+
+        <article>
+          <div class="fontArial">
+            <h6 class="titleNewsEvents marginTop">Consetetur sadipscing nonumy elitr...  </h6>
+            <span class="right date">
+              18.12.2013
+            </span>
+            <p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore Consetetur sadipscing elitr,  diam nonumy eirmod tempor invidunt ut labore...</p>
+          </div>
+        </article>
+
+      </section>
+      
       <!-- partners section -->
       <section class="twoColumns right" id="partners">
         <div class="left">
@@ -112,16 +133,47 @@
 
     <div class="clear"></div>
 
-    <footer>
-      <div class="contact">
-        hi
-      </div>
-      <div class="contact">
-        ha
-      </div>
-      <div class="contact">
-        ho
-      </div>
+    <footer id="bottomPage">
+      <section class="info left">
+        <h3>contact us</h3>
+        <ul class="fontArial">
+          <li><span class="bold">Address: </span> 72/4 Truong Quoc Dung Street, Ward 10, Phu Nhuan District, Ho Chi Minh City, Vietnam</li>
+          <li><span class="bold">Tel: </span>  +84 8 3997 5901</li>
+          <li><span class="bold">Fax: </span>  +84 8 3997 5900</li>
+          <li><span class="bold">Email: </span>  contact-us@sutrixmedia.com</li>
+        </ul>
+      </section>
+      <section class="quickLinks left">
+        <h3>quick links</h3>
+        <ul class="fontArial">
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Latest News</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </section>
+      <section class="signUp left">
+        <h3>newsletter</h3>
+        <input class="fontArial" type="email" name="email" placeholder="Enter Email...">
+      </section>
+      
+      <div class="clear"></div>
+      
+      <hr/>
+
+      <nav id="bottomNav">
+        <ul class="fontArial">
+          <li><a href="#" title="homepage">Homepage</a></li>
+          <li><a href="#" title="about us">About Us</a></li>
+          <li><a href="#" title="services">Services</a></li>
+          <li><a href="#" title="news & events">News & Events</a></li>
+          <li><a href="#" title="gallery">Gallery</a></li>
+          <li><a href="#" title="contact us">Contact Us</a></li>
+          <li><a href="#" title="homepage">FAQs</a></li>
+        </ul>
+      </nav>
+
     </footer>
 	</div>
 	
