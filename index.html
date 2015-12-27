@@ -11,6 +11,10 @@
   <![endif]-->
   
   <link rel="stylesheet" href="css/reset.css"  type="text/css">
+  <link rel="stylesheet" href="css/common.css"  type="text/css">
+  <link rel="stylesheet" href="css/header.css"  type="text/css">
+  <link rel="stylesheet" href="css/welcomeSection.css"  type="text/css">
+  <link rel="stylesheet" href="css/newsEventsPartners.css"  type="text/css">
 	<link rel="stylesheet" href="css/style.css"  type="text/css">
 </head>
 <body>
@@ -19,8 +23,6 @@
       <div class="logo">
         <img src="images/logo.png" alt="logo">
       </div>
-      
-
       <div id="myFormContainer">
         <form id="myForm" action="#" method='post' > 
           <div id="searchFieldBox">
@@ -36,8 +38,6 @@
           <img src="images/france_flag.png" alt="">
         </div>
       </div>
-
-      
       <div class="clear"></div>
 
       <!-- navbar -->
@@ -50,31 +50,57 @@
           <li><a href="#">Contact us</a></li>
           <li id="liLastChild"><a href="#">Faqs</a></li>
         </ul>
-      </nav><!-- end navbar -->
+      </nav>
     </header><!-- end header -->
-
+    
     <div class="clear"></div>
     
-    <div class="banner">
-      <img src="images/banner.jpg" alt="">
-    </div>
+    <main role="main">
+      <section class="banner">
+        <img src="images/banner.jpg" alt="">
+      </section>
 
-    <!-- welcome section -->
-    <div class="welcomeSection">
-      <div id="welcomeText">
-        <h1>Welcome to our Web Site !</h1>
-        <p>Lorem Ipsum consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore Lorem ipsum dolor sit amet, conseter sadipscing elitr, sed diam ipsum dolor sit amet, conseter sadipscing elitr, sed diam Lorem Ipsum consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore Lorem ipsum dolor sit amet, conseter sadipscing elitr, sed diam ipsum dolor sit amet, conseter sadipscing elitr, sed diam invidunt ut labore Lorem ipsum dolor sit amet, conseter sadipscing elitr, sed diam ipsum dolor sit amet, conseter conseter sit... <a href="#">View more </a></p>
-      </div>
-      <img src="images/welcome.jpg" alt="">
-    </div> 
-    <!-- end welcome section -->
-
-    <!-- infor section  -->
-    <div>
+      <!-- welcome section -->
+      <section class="welcomeSection">
+        <article class="left" id="welcomeText">
+          <h1>Welcome to our Web Site !</h1>
+          <p>Lorem Ipsum consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore Lorem ipsum dolor sit amet, conseter sadipscing elitr, sed diam ipsum dolor sit amet, conseter sadipscing elitr, sed diam Lorem Ipsum consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore Lorem ipsum dolor sit amet, conseter sadipscing elitr, sed diam ipsum dolor sit amet, conseter sadipscing elitr, sed diam invidunt ut labore Lorem ipsum dolor sit amet, conseter sadipscing elitr, sed diam ipsum dolor sit amet, conseter conseter sit... <a href="#" class="viewMore">View more </a></p>
+        </article>
+        <div id="welcomeSlider">
+          <img src="images/welcome.jpg" alt="">
+        </div>
+      </section> 
       
-    </div>
-    <!-- end infor section  -->
+      <div class="clear"></div>
+
+      <!-- news and events section  -->
+      <section class="twoColumns left" id="newsEvents">
+        <div class="left">
+          <h2>news and events</h2>
+        </div>
+        <div class="right"> 
+          <a href="#" class="viewMore">View more </a>
+        </div>
+
+        <div class="clear"></div>
+        <hr>
+
+        <article>
+          
+        </article>
+      </section>
+
+      <!-- partners section -->
+      <section class="twoColumns right" id="partners">
+        <div class="left">
+          <h2>partners</h2>
+          <hr>
+        </div>
+      </section>
+    </main> <!-- end main -->
+
     <div class="clear"></div>
+
     <footer>
       <div class="contact">
         hi
