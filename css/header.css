@@ -1,11 +1,10 @@
 /*header part*/
 
 nav#topNav ul li {
-	float: left;
 	background: url('../images/img-bg-li.png') no-repeat center;
 	width: 163px;
  	text-align: center;
- 	/*padding-top: 21px;*/
+ 	
     height: 41px;
  	float: left;
 	display: inline;
