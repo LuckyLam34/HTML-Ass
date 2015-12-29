@@ -1,7 +1,7 @@
 body {
 	font-size: 1.5em;
 	font-family: "Century Gothic", Helvetica, sans-serif;
-	background: url('../images/image_background.jpg');
+	background: url('../images/image_background.jpg') repeat !important;
 }
 
 .container {

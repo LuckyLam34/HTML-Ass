@@ -147,7 +147,7 @@ section.banner .selected {
 	font-size: 12px;
 	line-height: 16px;
     font-family: "Arial", Helvetica, sans-serif;
-	padding: 5px 10px;
+	padding: 5px 145px 5px 10px;
 	opacity: 0.8;
 	overflow: hidden;
 	display: none;
@@ -182,12 +182,35 @@ section.banner .selected {
 
 
 .nivo-controlNav {
-	text-align:center;
-	padding: 15px 0;
-}
+	position: absolute;
+    bottom: -5px;
+    right: 10px;
+    
+    opacity: 0.8;
+    margin-right: -20px;
+    width: 140px;
+    z-index: 9;
+}  
+
 .nivo-controlNav a {
-	cursor:pointer;
+	background: url('../images/circle.png') no-repeat center;
+	width: 30px;
+    height: 30px;
+    font-size: 12px;
+ 	font-weight: bold;
+ 	line-height: 28px;
+ 	display: block;
+ 	float: left;
 }
+
 .nivo-controlNav a.active {
-	font-weight:bold;
+	background: url('../images/selected_circle.png') no-repeat center;
+	width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    font-size: 12px;
+ 	font-weight: bold;
+ 	line-height: 28px;
+ 	display: block;
+ 	float: left;
 }
