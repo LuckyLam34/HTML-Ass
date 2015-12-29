@@ -151,6 +151,14 @@ section.banner .selected {
 	opacity: 0.8;
 	overflow: hidden;
 	display: none;
+
+	/*border radius*/
+	-webkit-border-radius: 0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px;
+	border-radius: 0 0 5px 5px;
+	behavior: url(PIE.htc);
+
+	/*opacity IE issue*/
 	-moz-opacity: 0.8;
 	filter:alpha(opacity=8);
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -201,6 +209,7 @@ section.banner .selected {
  	line-height: 28px;
  	display: block;
  	float: left;
+ 	color: #ffffff;
 }
 
 .nivo-controlNav a.active {
