@@ -17,6 +17,9 @@
   <link rel="stylesheet" href="css/newsEventsPartners.css"  type="text/css">
   <link rel="stylesheet" href="css/footer.css"  type="text/css">
 	<link rel="stylesheet" href="css/style.css"  type="text/css">
+  <link rel="stylesheet" href="css/nivo-slider.css"  type="text/css">
+
+  
 </head>
 <body>
 	<div class="container">
@@ -59,13 +62,34 @@
     <main>
 
 
+
+
+
       <!-- banner image slider area -->
       <section class="banner">
-        <img src="images/imgSlider/beach1.jpg" alt="">
+        <div id="slider" class="nivoSlider">
+          <img title="#caption1" src="images/imgSlider/beach1.jpg" alt="">
+          <img title="#caption2" src="images/imgSlider/beach2.jpg" alt="">
+          <img title="#caption3" src="images/imgSlider/beach3.jpg" alt="">
+          <img title="#caption4" src="images/imgSlider/beach4.jpg" alt="">
+        </div>
+        
+        
         <div id="leftArrow"></div>
         <div id="rightArrow"></div>
         <div id="caption" class="left fontArial">
-          <p>At Naturetour we are constantly adding to and improving our portfolio of wildlife holidays to provide you with an even greater choice of wildlife viewing experiences we are constantly adding to and improving. </p>
+          <div id="caption1" class="nivo-html-caption">
+            At Naturetour we are constantly adding to and improving our portfolio of wildlife holidays to provide you with an even greater choice of wildlife viewing experiences we are constantly adding to and improving. 
+          </div>
+          <div id="caption2" class="nivo-html-caption">
+            At Naturetour we are constantly adding to and improving our portfolio of wildlife holidays to provide you with an even greater choice of wildlife viewing experiences we are constantly adding to and improving. 
+          </div>
+          <div id="caption3" class="nivo-html-caption">
+            At Naturetour we are constantly adding to and improving our portfolio of wildlife holidays to provide you with an even greater choice of wildlife viewing experiences we are constantly adding to and improving. 
+          </div>
+          <div id="caption4" class="nivo-html-caption">
+            At Naturetour we are constantly adding to and improving our portfolio of wildlife holidays to provide you with an even greater choice of wildlife viewing experiences we are constantly adding to and improving. 
+          </div>
         </div>
         
         <ul class="right fontArial">
@@ -83,6 +107,8 @@
           </li>
         </ul>
       </section><!-- end banner section -->
+
+
 
 
 
@@ -150,9 +176,6 @@
             </article>
           </li>
         </ul>
-
-
-
       </section>
       
       <!-- partners section -->
@@ -223,7 +246,14 @@
 
     <!-- jQuery & Nivo Slider -->
     <script src="script/jquery-1.6.1.min.js"></script>
-    <script src="jquery.nivo.slider.pack.js"></script>
+    <script src="script/jquery.nivo.slider.pack.js"></script>
+    <!-- call the JQuery plugin nivo -->
+    <script>
+      $(window).load(function() {
+        $('#slider').nivoSlider();
+        alert('what');
+      });
+    </script>
 	</div>
 	
 </body>

@@ -14,6 +14,7 @@ section.banner img {
 	border-radius: 5px 5px 0 0;
 	behavior: url(PIE.htc);
 	z-index: -1;
+	display: none;
 
 }
 
@@ -21,7 +22,7 @@ section.banner #leftArrow {
 	position: absolute;
 	height: 50px;
 	width: 50px;
-	background: url('../images/imgSlider/arrow_left.png') no-repeat center;
+	/*background: url('../images/imgSlider/arrow_left.png') no-repeat center;*/
 	top: 124px;
 	opacity: 0.4;
 }
@@ -30,7 +31,7 @@ section.banner #rightArrow {
 	position: absolute;
 	height: 50px;
 	width: 50px;
-	background: url('../images/imgSlider/right_arrow.png') no-repeat center;
+	/*background: url('../images/imgSlider/right_arrow.png') no-repeat center;*/
 	top: 124px;
 	opacity: 0.4;
 	right: 2px;
@@ -96,3 +97,20 @@ section.banner .selected {
 }
 
 
+.nivo-directionNav .nivo-prevNav {
+  background:transparent url('../images/imgSlider/arrow_left.png') no-repeat center;
+  height:50px; /*height of img*/
+  width:50px; /*width of img*/
+  text-indent:-10000px; /*moving the default text*/
+  overflow:hidden; /*hiding the default text*/
+  margin-left: 10px;
+}
+
+.nivo-directionNav .nivo-nextNav {
+  background:transparent url('../images/imgSlider/right_arrow.png') no-repeat center;
+  height:50px; /*height of img*/
+  width:50px; /*width of img*/
+  text-indent:-10000px; /*moving the default text*/
+  overflow:hidden; /*hiding the default text*/
+  margin-right: 10px;
+}
