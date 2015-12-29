@@ -16,8 +16,8 @@
   <link rel="stylesheet" href="css/welcomeSection.css"  type="text/css">
   <link rel="stylesheet" href="css/newsEventsPartners.css"  type="text/css">
   <link rel="stylesheet" href="css/footer.css"  type="text/css">
-	<link rel="stylesheet" href="css/style.css"  type="text/css">
   <link rel="stylesheet" href="css/nivo-slider.css"  type="text/css">
+  <link rel="stylesheet" href="css/style.css"  type="text/css">
 
   
 </head>
@@ -77,18 +77,18 @@
         
         <div id="leftArrow"></div>
         <div id="rightArrow"></div>
-        <div id="caption" class="left fontArial">
+        <div class="left fontArial">
           <div id="caption1" class="nivo-html-caption">
             At Naturetour we are constantly adding to and improving our portfolio of wildlife holidays to provide you with an even greater choice of wildlife viewing experiences we are constantly adding to and improving. 
           </div>
           <div id="caption2" class="nivo-html-caption">
-            At Naturetour we are constantly adding to and improving our portfolio of wildlife holidays to provide you with an even greater choice of wildlife viewing experiences we are constantly adding to and improving. 
+            Anse Lazio, on the northwest tip of Praslin island, is known widely as the most beautiful beach in the Seraphed. It's no wonder: The beach is long and broad with velvety sand and shocking blue water, and it's fringed with swaying palms and
           </div>
           <div id="caption3" class="nivo-html-caption">
-            At Naturetour we are constantly adding to and improving our portfolio of wildlife holidays to provide you with an even greater choice of wildlife viewing experiences we are constantly adding to and improving. 
+            Matira is perhaps the most famous of Tahiti's beaches, and for good reason. The mile-long stretch of silky, powder-white sand slopes gently into a shallow emerald lagoon, and is backed  
           </div>
           <div id="caption4" class="nivo-html-caption">
-            At Naturetour we are constantly adding to and improving our portfolio of wildlife holidays to provide you with an even greater choice of wildlife viewing experiences we are constantly adding to and improving. 
+            This beach in Waipio Valley is one of the hardest to get to in Hawaii—you must hike or drive down a treacherously narrow, steep road to reach your destination. But it's well worth the trek: 
           </div>
         </div>
         
@@ -249,10 +249,23 @@
     <script src="script/jquery.nivo.slider.pack.js"></script>
     <!-- call the JQuery plugin nivo -->
     <script>
+
+      //detect browser
+      var ua = window.navigator.userAgent;
+      var msie = ua.indexOf("MSIE ");
+
       $(window).load(function() {
-        $('#slider').nivoSlider();
-        alert('what');
+        $('#slider').nivoSlider({
+          effect: 'fade',
+          controlNav: checkIE(),
+          slices: 1
+        });
       });
+
+      //msie > 0 -> IE
+      function checkIE() {
+        return !(msie > 0)
+      }
     </script>
 	</div>
 	

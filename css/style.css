@@ -18,11 +18,12 @@ section.banner img {
 
 }
 
+/*
 section.banner #leftArrow {
 	position: absolute;
 	height: 50px;
 	width: 50px;
-	/*background: url('../images/imgSlider/arrow_left.png') no-repeat center;*/
+	/*background: url('../images/imgSlider/arrow_left.png') no-repeat center;
 	top: 124px;
 	opacity: 0.4;
 }
@@ -31,12 +32,13 @@ section.banner #rightArrow {
 	position: absolute;
 	height: 50px;
 	width: 50px;
-	/*background: url('../images/imgSlider/right_arrow.png') no-repeat center;*/
+	/*background: url('../images/imgSlider/right_arrow.png') no-repeat center;
 	top: 124px;
 	opacity: 0.4;
 	right: 2px;
 	
 }
+*/
 
 section.banner #caption {
 	
@@ -96,7 +98,7 @@ section.banner .selected {
 	color: #ffffff;
 }
 
-
+/*customize nivo*/
 .nivo-directionNav .nivo-prevNav {
   background:transparent url('../images/imgSlider/arrow_left.png') no-repeat center;
   height:50px; /*height of img*/
@@ -104,6 +106,7 @@ section.banner .selected {
   text-indent:-10000px; /*moving the default text*/
   overflow:hidden; /*hiding the default text*/
   margin-left: 10px;
+
 }
 
 .nivo-directionNav .nivo-nextNav {
@@ -113,4 +116,78 @@ section.banner .selected {
   text-indent:-10000px; /*moving the default text*/
   overflow:hidden; /*hiding the default text*/
   margin-right: 10px;
+  opacity: 0.4;
+}
+
+.nivo-directionNav .nivo-prevNav, .nivo-directionNav .nivo-nextNav {
+	/* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+
+  /* IE 5-7 */
+  filter: alpha(opacity=40);
+
+  /* Netscape */
+  -moz-opacity: 0.4;
+
+  /* Safari 1.x */
+  -khtml-opacity: 0.4;
+
+  /* Good browsers */
+  opacity: 0.4;
+}
+
+.nivo-caption {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:#000;
+	color:#fff;
+	width:100%;
+	z-index:8;
+	font-size: 12px;
+	line-height: 16px;
+    font-family: "Arial", Helvetica, sans-serif;
+	padding: 5px 10px;
+	opacity: 0.8;
+	overflow: hidden;
+	display: none;
+	-moz-opacity: 0.8;
+	filter:alpha(opacity=8);
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.nivo-caption p {
+	padding:5px;
+	margin:0;
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+
+.nivoSlider {
+	position:relative;
+	width:100%;
+	height:auto;
+	overflow: hidden;
+	border: 1px none #999;
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+	behavior: url(PIE.htc);
+}
+
+
+.nivo-controlNav {
+	text-align:center;
+	padding: 15px 0;
+}
+.nivo-controlNav a {
+	cursor:pointer;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
 }
