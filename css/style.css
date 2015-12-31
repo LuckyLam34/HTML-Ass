@@ -18,28 +18,6 @@ section.banner img {
 
 }
 
-/*
-section.banner #leftArrow {
-	position: absolute;
-	height: 50px;
-	width: 50px;
-	/*background: url('../images/imgSlider/arrow_left.png') no-repeat center;
-	top: 124px;
-	opacity: 0.4;
-}
-
-section.banner #rightArrow {
-	position: absolute;
-	height: 50px;
-	width: 50px;
-	/*background: url('../images/imgSlider/right_arrow.png') no-repeat center;
-	top: 124px;
-	opacity: 0.4;
-	right: 2px;
-	
-}
-*/
-
 section.banner #caption {
 	
 	height: 31px;
@@ -55,9 +33,6 @@ section.banner #caption {
 	-moz-border-radius: 0 0 0 5px;
 	border-radius: 0 0 0 5px;
 	behavior: url(PIE.htc);
-
-
-
 }
 
 section.banner ul {
@@ -72,10 +47,6 @@ section.banner ul {
 	behavior: url(PIE.htc);
 }
 
-/*section.banner ul li a {
-	font-weight: bold;
-	font-size: 12px;
-}*/
 section.banner ul li {
 	display: inline;
 	background: url('../images/circle.png') no-repeat center;
@@ -101,39 +72,39 @@ section.banner .selected {
 /*customize nivo*/
 .nivo-directionNav .nivo-prevNav {
   background:transparent url('../images/imgSlider/arrow_left.png') no-repeat center;
-  height:50px; /*height of img*/
-  width:50px; /*width of img*/
-  text-indent:-10000px; /*moving the default text*/
-  overflow:hidden; /*hiding the default text*/
-  margin-left: 10px;
-
 }
 
 .nivo-directionNav .nivo-nextNav {
   background:transparent url('../images/imgSlider/right_arrow.png') no-repeat center;
-  height:50px; /*height of img*/
-  width:50px; /*width of img*/
-  text-indent:-10000px; /*moving the default text*/
-  overflow:hidden; /*hiding the default text*/
+  height:50px; 
+  width:50px; 
+  text-indent:-10000px; 
+  overflow:hidden;
   margin-right: 10px;
   
 }
 
 .nivo-directionNav .nivo-prevNav, .nivo-directionNav .nivo-nextNav {
+
+	height:50px; 
+    width:50px; 
+    text-indent:-10000px; 
+    overflow:hidden; 
+    margin-left: 10px;
 	/* IE 8 */
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
 
-  /* IE 5-7 */
-  filter: alpha(opacity=40);
+  	/* IE 5-7 */
+  	filter: alpha(opacity=40);
 
-  /* Netscape */
-  -moz-opacity: 0.4;
+  	/* Netscape */
+  	-moz-opacity: 0.4;
 
-  /* Safari 1.x */
-  -khtml-opacity: 0.4;
+  	/* Safari 1.x */
+  	-khtml-opacity: 0.4;
 
-  /* Good browsers */
-  opacity: 0.4;
+  	/* Good browsers */
+  	opacity: 0.4;
 }
 
 .nivo-directionNav a {
@@ -152,7 +123,6 @@ section.banner .selected {
 	line-height: 16px;
     font-family: "Arial", Helvetica, sans-serif;
 	padding: 5px 145px 5px 10px;
-	
 	overflow: hidden;
 	display: none;
 
@@ -162,30 +132,31 @@ section.banner .selected {
 	border-radius: 0 0 5px 5px;
 	behavior: url(PIE.htc);
 
-	
-
 	/* IE 8 */
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
 
-  /* IE 5-7 */
-  filter: alpha(opacity=80);
+    /* IE 5-7 */
+    filter: alpha(opacity=80);
 
-  /* Netscape */
-  -moz-opacity: 0.8;
+    /* Netscape */
+    -moz-opacity: 0.8;
 
-  /* Safari 1.x */
-  -khtml-opacity: 0.8;
+    /* Safari 1.x */
+    -khtml-opacity: 0.8;
 
-  /* Good browsers */
-  opacity: 0.8;
+    /* Good browsers */
+    opacity: 0.8;
 }
+
 .nivo-caption p {
 	padding:5px;
 	margin:0;
 }
+
 .nivo-caption a {
 	display:inline !important;
 }
+
 .nivo-html-caption {
     display:none;
 }
@@ -201,7 +172,6 @@ section.banner .selected {
 	border-radius: 5px 5px 0 0;
 	behavior: url(PIE.htc);
 }
-
 
 .nivo-controlNav {
 	position: absolute;

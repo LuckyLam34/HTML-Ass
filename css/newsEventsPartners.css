@@ -81,21 +81,9 @@ h6.titleNewsEvents ~ p {
 	margin-top: 12px;
 }
 
-ul {
-	/*list-style-type: circle;*/
-}
-
-.starIcon {
-	background: url('../images/star_icon.png') no-repeat;
-}
-
 section#newsEvents ul li {
 	background: url('../images/star_icon.png') no-repeat 0% 15%;
 	list-style: none;
 	margin: 0;
 	padding-left: 16px;
 }
-
-/*section#newsEvents > ul > li {
-	padding-left: 10px;
-}*/

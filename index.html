@@ -20,7 +20,6 @@
   <link rel="stylesheet" href="css/style.css"  type="text/css">
   <link rel="stylesheet" href="css/jquery.bxslider.css">
   <link rel="stylesheet" href="css/partnerSlider.css"  type="text/css">
-  
 </head>
 <body>
 	<div class="container">
@@ -61,7 +60,6 @@
     <div class="clear"></div>
     
     <main>
-
       <!-- banner image slider area -->
       <section class="banner">
         <div id="slider" class="nivoSlider">
@@ -70,10 +68,6 @@
           <img title="#caption3" src="images/imgSlider/beach3.jpg" alt="">
           <img title="#caption4" src="images/imgSlider/beach4.jpg" alt="">
         </div>
-        
-        
-        <div id="leftArrow"></div>
-        <div id="rightArrow"></div>
         <div class="left fontArial">
           <div id="caption1" class="nivo-html-caption">
             At Naturetour we are constantly adding to and improving our portfolio of wildlife holidays to provide you with an even greater choice of wildlife viewing experiences we are constantly adding to and improving. 
@@ -88,7 +82,6 @@
             This beach in Waipio Valley is one of the hardest to get to in Hawaii—you must hike or drive down a treacherously narrow, steep road to reach your destination. But it's well worth the trek: 
           </div>
         </div>
-        
       </section><!-- end banner section -->
 
       <!-- welcome section -->
@@ -97,8 +90,6 @@
           <h1>Welcome to our Web Site !</h1>
           <p class="fontArial">Lorem Ipsum consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore Lorem ipsum dolor sit amet, conseter sadipscing elitr, sed diam ipsum dolor sit amet, conseter sadipscing elitr, sed diam Lorem Ipsum consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore Lorem ipsum dolor sit amet, conseter sadipscing elitr, sed diam ipsum dolor sit amet, conseter sadipscing elitr, sed diam invidunt ut labore Lorem ipsum dolor sit amet, conseter sadipscing elitr, sed diam ipsum dolor sit amet, conseter conseter sit... <a href="#" class="viewMore">View more </a></p>
         </article>
-
-
         <div id="welcomeSlider">
           <div id="slider1" class="nivoSlider">
             <img src="images/imgWelcomeSlider/welcome1.jpg" alt="welcome1">
@@ -107,10 +98,7 @@
             <img src="images/imgWelcomeSlider/welcome4.jpg" alt="welcome4">
           </div>
         </div>
-
-
-
-      </section> 
+      </section><!-- end welcome section -->
       
       <div class="clear"></div>
 
@@ -124,9 +112,8 @@
         </div>
 
         <div class="clear"></div>
+
         <hr>
-
-
         <article id="highLight">
           <img src="images/news-events.jpg" alt="events highlight"  class="left">
           <div class="relative fontArial">
@@ -137,6 +124,7 @@
             <p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore Consetetur sadipscing elitr,  diam nonumy eirmod tempor invidunt ut labore...</p>
           </div>
         </article>
+
         <div class="clear"></div>
 
         <ul>
@@ -163,8 +151,8 @@
             </article>
           </li>
         </ul>
-      </section>
-      
+      </section><!-- end news and events section -->
+
       <!-- partners section -->
       <section class="twoColumns right" id="partners">
         <div class="left">
@@ -172,46 +160,26 @@
           <hr>
 
           <!-- partner images slider -->
-
           <div class="slider2">
             <div class="slide">
               <img src="images/imgPartners/partner1.jpg">
               <img src="images/imgPartners/partner2.jpg">
             </div>
-
-           
             <div class="slide">
               <img src="images/imgPartners/partner3.jpg">
               <img src="images/imgPartners/partner4.jpg">
             </div>
-            
             <div class="slide">
               <img src="images/imgPartners/partner5.jpg">
               <img src="images/imgPartners/partner6.jpg">
             </div>
-            
             <div class="slide">
               <img src="images/imgPartners/partner7.jpg">
               <img src="images/imgPartners/partner8.jpg">
             </div>
-            
           </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
-      </section>
+      </section><!-- end section -->
     </main> <!-- end main -->
 
     <div class="clear"></div>
@@ -239,7 +207,6 @@
       </section>
       <section class="signUp left">
         <h3>newsletter</h3>
-
         <form class="userEmailSender" name="emailSender" action="#" method='post'>
         <div class="left">
           <input class="fontArial" type="email" name="email" placeholder="Enter Email...">
@@ -253,7 +220,6 @@
       <div class="clear"></div>
       
       <hr/>
-
       <nav id="bottomNav" class="left">
         <ul class="fontArial">
           <li><a href="#" title="homepage">Homepage</a></li>
@@ -265,57 +231,17 @@
           <li><a href="#" title="homepage">FAQs</a></li>
         </ul>
       </nav>
-
       <span class="fontArial" id="copyright">
         Copyright © 2014 Template Demo All Rights Reserved.
       </span>
     </footer><!-- end footer -->
-
-    <!-- jQuery & Nivo Slider -->
-    <script src="script/jquery-1.7.min.js"></script>
-    <script src="script/jquery.nivo.slider.pack.js"></script>
-    <script src="script/jquery.bxslider.min.js"></script>
-    <!-- call the JQuery plugin nivo -->
-    <script>
-
-      //detect browser
-      var ua = window.navigator.userAgent;
-      var msie = ua.indexOf("MSIE ");
-
-      $(window).load(function() {
-        $('#slider').nivoSlider({
-          effect: 'fade',
-          controlNav: checkIE(),
-          slices: 1
-        });
-
-        setTimeout(function(){
-            $('#slider1').nivoSlider({ 
-              pauseTime:5000, 
-              
-              pauseOnHover:false 
-            });
-        }, 1000);
-
-        
-      });
-
-      $(document).ready(function(){
-        $('.slider2').bxSlider({
-          slideWidth: 128,
-          minSlides: 2,
-          maxSlides: 3,
-          slideMargin: 10,
-          auto: true,
-          pager: false
-        });
-      });
-      //msie > 0 -> IE
-      function checkIE() {
-        return !(msie > 0);
-      }
-    </script>
-	</div>
+  </div>
+  <!-- jQuery & Nivo Slider -->
+  <script src="script/jquery-1.7.min.js"></script>
+  <script src="script/jquery.nivo.slider.pack.js"></script>
+  <script src="script/jquery.bxslider.min.js"></script>
+  <!-- call the JQuery plugin nivo and bxslider-->
+  <script src="script/imgSlider.js"></script>
 	
 </body>
 </html>

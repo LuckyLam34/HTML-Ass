@@ -17,6 +17,10 @@ body {
 	float: left;
 }
 
+.bold {
+	font-weight: bold;
+}
+
 .fontArial {
 	font-family: "Arial", Helvetica, sans-serif;
 }

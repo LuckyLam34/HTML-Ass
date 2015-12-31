@@ -3,7 +3,6 @@
 section.welcomeSection {
 	height: 130px;
 	padding: 10px;
-	
 	margin: 18px 0 20px;
 	background-color: #e9e9e9;
 	border: 1px none #999;
@@ -20,9 +19,7 @@ article#welcomeText > h1 {
 }
 
 article#welcomeText p {
-	
 	font-size: 11px;
-
 	float: left;
 	line-height: 18px;
 	padding-top: 13px;
@@ -40,5 +37,4 @@ a.viewMore {
 	float: right;
 	padding-left: 27px;
 	width: 244px;
-
 }

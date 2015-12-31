@@ -1,4 +1,5 @@
 /*footer*/
+
 footer#bottomPage {
 	padding: 19px 10px 10px;
 	background-color: #dfdfdf;
@@ -8,20 +9,22 @@ footer#bottomPage {
 	border-radius: 5px 5px 0 0;
 	behavior: url(PIE.htc);
 }
+
 section.info, section.quickLinks, section.signUp  {
 	width: 320px;
 }
 
-section.info > h3, section.quickLinks > h3 {
-	font-size: 14px;
+section.info > h3, section.quickLinks > h3, section.signUp {
 	font-weight: bold;
 	text-transform: uppercase;
 }
 
+section.info > h3, section.quickLinks > h3 {
+	font-size: 14px;
+}
+
 section.signUp {
 	color: #ff7200;
-	text-transform: uppercase;
-	font-weight: bold;
 	font-size: 21px;
 }
 
@@ -41,9 +44,6 @@ section.quickLinks > ul > li, section.info > ul > li {
 section.quickLinks > ul > li:first-child, section.info > ul > li:first-child {
 	margin-top: 9px;
 }
-.bold {
-	font-weight: bold;
-}
 
 section.signUp input[type="email"]{
 	width: 224px;
@@ -60,6 +60,7 @@ section.signUp input[type="email"]{
 form.userEmailSender {
 	height: 45px;
 }
+
 footer > hr {
 	border-top: 1px solid #c1c1c1;
 	border-bottom: 1px solid #fff;
@@ -73,7 +74,6 @@ nav#bottomNav {
 
 nav#bottomNav ul li {
 	display: inline;
-
 }
 
 nav#bottomNav ul li a {
@@ -83,6 +83,7 @@ nav#bottomNav ul li a {
 	border-left: 1px solid #060606;
 	padding-left: 7px;
 }
+
 nav#bottomNav ul li:first-child a {
 	border: none;
 	padding: 0;
